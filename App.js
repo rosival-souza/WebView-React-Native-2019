@@ -17,6 +17,17 @@ export default class Main extends Component {
 
   constructor(props) {
     super(props)
+
+    NetInfo.isConnected.fetch().then(conn => {
+      if (conn) {
+        this.alertConnected()
+        this.setState({ isConnected: true })
+      } else {
+        this.alertDisconnected()
+        this.setState({ isConnected: false })
+      }
+    })
+
     this.state = {
       isConnected: true
     }
@@ -61,7 +72,7 @@ export default class Main extends Component {
   }
 
   render() {
-
+    
     if (this.state.isConnected) {
       return <Application/>
     }else{

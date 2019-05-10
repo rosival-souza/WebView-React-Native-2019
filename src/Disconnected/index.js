@@ -8,7 +8,7 @@ class Disconnected extends Component {
         return (
             <View style={{flex: 1, alignItems:'center', justifyContent: 'center'}}>
                 <StatusBar backgroundColor="darkorange" />
-                <Icon style={{fontSize: 40, color:'orange'}} name="phone" />
+                <Icon style={{fontSize: 40, color:'orange'}} name="globe-americas" />
                 <Text style={{fontSize: 20}}>Você esta desconectado...</Text>
             </View>
         );
