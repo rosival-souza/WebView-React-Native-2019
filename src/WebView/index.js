@@ -14,7 +14,7 @@ class Application extends Component {
   render() {
 
     return (
-      <WebView source={{ uri: 'https://chocolatras-anonimos.firebaseapp.com/' }}>
+      <WebView source={{ uri: 'https://suporters.com/' }}>
         <StatusBar backgroundColor="#FF8000" />
       </WebView>
 
